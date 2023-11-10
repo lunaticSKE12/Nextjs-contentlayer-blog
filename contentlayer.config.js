@@ -1,6 +1,6 @@
 import { makeSource, defineDocumentType } from '@contentlayer/source-files';
 
-const Doc = defineDocumentType(() => ({
+const Blog = defineDocumentType(() => ({
   name: 'Blog',
   filePathPattern: '**/**/*.mdx',
   fields: {
@@ -35,9 +35,9 @@ const Doc = defineDocumentType(() => ({
     },
   },
   computedFields: {
-    url_path: {
+    url: {
       type: 'string',
-      resolve: (doc) => `/blogs/${doc.raw.flattenedPath}`,
+      resolve: (doc) => `/blogs/${doc._raw.flattenedPath}`,
     },
   },
 }));
