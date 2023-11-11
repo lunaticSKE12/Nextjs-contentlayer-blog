@@ -7,6 +7,7 @@ import {
   SunIcon,
   TwitterIcon,
 } from '../Icons';
+import siteMetadata from '@/src/utils/siteMetaData';
 
 const Header = () => {
   return (
@@ -30,16 +31,16 @@ const Header = () => {
         </button>
       </nav>
       <div>
-        <a href="http://example.com" className="w-6 h-6 mr-4 inline-block">
+        <a href={siteMetadata.linkedin} className="w-6 h-6 mr-4 inline-block">
           <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
-        <a href="http://example.com" className="w-6 h-6 mr-4 inline-block">
+        <a href={siteMetadata.twitter} className="w-6 h-6 mr-4 inline-block">
           <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
-        <a href="http://example.com" className="w-6 h-6 mr-4 inline-block">
+        <a href={siteMetadata.github} className="w-6 h-6 mr-4 inline-block">
           <GithubIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
-        <a href="http://example.com" className="w-6 h-6 mr-4 inline-block">
+        <a href={siteMetadata.dribbble} className="w-6 h-6 mr-4 inline-block">
           <DribbbleIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
       </div>

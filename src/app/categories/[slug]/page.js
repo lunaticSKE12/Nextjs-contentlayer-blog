@@ -30,6 +30,15 @@ export async function generateStaticParams() {
   return paths;
 }
 
+export async function generateMetadata({ params }) {
+  return {
+    title: `${params.slug.replaceAll('-', ' ')} Blogs`,
+    description: `Learn more about ${
+      params.slug === 'all' ? 'web development' : params.slug
+    } through our collection of expert blogs and tutorials`,
+  };
+}
+
 /**
  * The CategoryPage function filters a list of blogs based on their tags and returns the blogs that
  * have a tag matching the provided slug parameter.
