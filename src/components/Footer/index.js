@@ -17,7 +17,7 @@ const Footer = () => {
   console.log(errors);
 
   return (
-    <footer className="mt-16 rounded-2xl bg-dark  m-2 sm:m-10 flex flex-col items-center text-light">
+    <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
       <h3 className="mt-16 font-medium dark:font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4">
         Interesting Stories | Updates | Guides
       </h3>
@@ -39,7 +39,7 @@ const Footer = () => {
 
         <input
           type="submit"
-          className="bg-dark text-light cursor-pointer font-medium rounded px-3 sm:px-5 py-1"
+          className="bg-dark dark:bg-light text-light dark:text-dark cursor-pointer font-medium rounded px-3 sm:px-5 py-1"
         />
       </form>
       <div className="flex items-center mt-8">
@@ -65,7 +65,7 @@ const Footer = () => {
           aria-label="Check my profile on Github"
           target="_blank"
         >
-          <GithubIcon className="fill-light  hover:scale-125 transition-all ease duration-200" />
+          <GithubIcon className="fill-light dark:fill-dark hover:scale-125 transition-all ease duration-200" />
         </a>
         <a
           href={siteMetadata.dribbble}
