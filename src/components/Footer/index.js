@@ -78,7 +78,7 @@ const Footer = () => {
       </div>
       <div className="w-full  mt-16 md:mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex  flex-col md:flex-row items-center justify-between">
         <span className="text-center">
-          &copy;2023 CodeBucks. All rights reserved.
+          &copy;2023 Napong D. All rights reserved.
         </span>
         <Link
           href="/sitemap.xml"
@@ -86,14 +86,21 @@ const Footer = () => {
         >
           sitemap.xml
         </Link>
+        <Link
+          href="https://www.freepik.com/"
+          className="text-center underline my-4 md:my-0"
+        >
+          Logo by freepik
+        </Link>
+
         <div className="text-center">
           Made with &hearts; by{' '}
           <a
-            href="https://devdreaming.com"
+            href="https://github.com/lunaticSKE12"
             className="underline"
             target="_blank"
           >
-            CodeBucks
+            lunaticSKE12
           </a>
         </div>
       </div>
