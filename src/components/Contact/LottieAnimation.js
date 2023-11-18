@@ -5,11 +5,7 @@ import '@dotlottie/react-player/dist/index.css';
 
 const LottieAnimation = () => {
   return (
-    <DotLottiePlayer
-      src="/animation_llqd7ey4.lottie"
-      autoplay
-      loop
-    ></DotLottiePlayer>
+    <DotLottiePlayer src="/animation.lottie" autoplay loop></DotLottiePlayer>
   );
 };
 
