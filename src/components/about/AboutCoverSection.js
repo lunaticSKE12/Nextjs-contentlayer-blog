@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import profileCharacter from '../../../public/character.png';
+// profileCharacter avatar https://github.com/Codennnn/vue-color-avatar
 
 /**
  * The AboutCoverSection function returns a section element with two divs, one containing an image and
