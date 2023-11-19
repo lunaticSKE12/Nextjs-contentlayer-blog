@@ -2,6 +2,13 @@ import { sortBlogs } from '@/src/utils';
 import Link from 'next/link';
 import React from 'react';
 import BlogLayoutThree from '../Blog/BlogLayoutThree';
+/**
+ * The RecentPosts component displays a section of recent blog posts, with a title, a link to view all
+ * posts, and a grid of blog articles.
+ * @returns The RecentPosts component is returning a section element containing a list of recent blog
+ * posts. The blog posts are sorted using the sortBlogs function and then displayed in a grid layout.
+ * Each blog post is rendered using the BlogLayoutThree component.
+ */
 
 const RecentPosts = ({ blogs }) => {
   const sortedBlogs = sortBlogs(blogs);

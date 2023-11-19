@@ -2,6 +2,11 @@ import { cx } from '@/src/utils';
 import Link from 'next/link';
 import React from 'react';
 
+/**
+ * The `Tag` function is a React component that renders a link with a specified name and optional link
+ * and additional props.
+ * @returns The `Tag` component is returning a `Link` component with the following properties:
+ */
 const Tag = ({ link = '#', name, ...props }) => {
   return (
     <Link

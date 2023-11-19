@@ -2,6 +2,12 @@ import { format } from 'date-fns';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+/**
+ * The `BlogLayoutThree` function is a React component that renders a blog layout with an image, tags,
+ * title, and published date.
+ * @returns The BlogLayoutThree component is returning a JSX element, which is a div containing the
+ * following elements:
+ */
 
 const BlogLayoutThree = ({ blog }) => {
   return (

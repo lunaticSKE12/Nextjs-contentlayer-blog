@@ -2,6 +2,14 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
+/**
+ * The `ContactForm` function is a React component that renders a form for users to input their name,
+ * email, phone number, and project details, and submit a request.
+ * @returns The `ContactForm` component is returning a form with several input fields and a submit
+ * button. The form is using the `react-hook-form` library to handle form validation and submission.
+ * The form fields include a name input, an email input, a phone number input, and a textarea for
+ * project details. The form also includes a submit button with the text "send request".
+ */
 export default function ContactForm() {
   /* In this code snippet, `useForm()` is a custom hook provided by the `react-hook-form` library. */
   const {

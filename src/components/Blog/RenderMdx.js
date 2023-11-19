@@ -6,6 +6,11 @@ import Image from 'next/image';
 const mdxComponents = {
   Image,
 };
+/**
+ * The `RenderMdx` function renders MDX content with specific styling and components.
+ * @returns The RenderMdx component is returning a div element with various CSS classes and styles
+ * applied. Inside the div, it renders the MDXContent component, passing in the mdxComponents as props.
+ */
 
 const RenderMdx = ({ blog }) => {
   const MDXContent = useMDXComponent(blog.body.code);

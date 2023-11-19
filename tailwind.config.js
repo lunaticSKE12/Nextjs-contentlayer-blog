@@ -7,6 +7,8 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    /* In the given Tailwind CSS configuration, the `extend` property is used to add or override
+    existing styles in the default Tailwind CSS theme. */
     extend: {
       colors: {
         dark: '#1b1b1b',

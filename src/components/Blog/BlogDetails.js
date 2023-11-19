@@ -4,6 +4,11 @@ import React from 'react';
 import { slug } from 'github-slugger';
 import ViewCounter from './ViewCounter';
 
+/**
+ * The BlogDetails component displays details about a blog post, including the publication date, view
+ * count, reading time, and the first tag.
+ * @returns The BlogDetails component is returning a JSX element.
+ */
 const BlogDetails = ({ blog, slug: blogSlug }) => {
   return (
     <div className="px-2  md:px-10 bg-accent dark:bg-accentDark text-light dark:text-dark py-2 flex items-center justify-around flex-wrap text-lg sm:text-xl font-medium mx-5  md:mx-10 rounded-lg">

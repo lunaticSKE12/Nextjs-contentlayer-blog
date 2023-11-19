@@ -2,6 +2,13 @@ import Image from 'next/image';
 import React from 'react';
 import profileCharacter from '../../../public/character.png';
 
+/**
+ * The AboutCoverSection function returns a section element with two divs, one containing an image and
+ * the other containing a heading and paragraph.
+ * @returns The AboutCoverSection component is returning a section element with two child div elements.
+ * The first div element contains an Image component with some props for styling and responsiveness.
+ * The second div element contains a heading element and a paragraph element with some text content.
+ */
 const AboutCoverSection = () => {
   return (
     <section className="w-full md:h-[75vh] border-b-2 border-solid border-dark dark:border-light flex flex-col md:flex-row items-center justify-center text-dark dark:text-light">

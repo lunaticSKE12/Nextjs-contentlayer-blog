@@ -3,6 +3,10 @@ import React from 'react';
 import Tag from '../Elements/Tag';
 import Link from 'next/link';
 import { slug } from 'github-slugger';
+/**
+ * The `BlogLayoutOne` function returns a layout for a blog post with an image, tags, and a title.
+ * @returns The BlogLayoutOne component is returning a JSX element.
+ */
 
 const BlogLayoutOne = ({ blog }) => {
   return (

@@ -1,6 +1,13 @@
 import { slug } from 'github-slugger';
 import React from 'react';
 import Category from './Category';
+/**
+ * The Categories component renders a list of categories with links, highlighting the currently active
+ * category.
+ * @returns The Categories component is returning a div element with multiple Category components
+ * inside it. The Category components are rendered based on the categories array passed as a prop. Each
+ * Category component has a key, link, name, and active prop.
+ */
 
 const Categories = ({ categories, currentSlug }) => {
   return (

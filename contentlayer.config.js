@@ -6,6 +6,8 @@ import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 import GithubSlugger from 'github-slugger';
 
+/* The `defineDocumentType` function is used to define a document type for the content layer. In this
+case, it is defining a document type called "Blog". */
 const Blog = defineDocumentType(() => ({
   name: 'Blog',
   filePathPattern: '**/**/*.mdx',
@@ -77,6 +79,8 @@ const Blog = defineDocumentType(() => ({
 const codeOptions = {
   theme: 'github-dark',
 };
+/* The code `export default makeSource({ ... })` is creating a source object that will be used to
+generate content from files in a specific directory. */
 
 export default makeSource({
   /* options */

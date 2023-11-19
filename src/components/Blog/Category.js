@@ -1,6 +1,14 @@
 import { cx } from '@/src/utils';
 import Link from 'next/link';
 import React from 'react';
+/**
+ * The Category function is a React component that renders a link with a name and applies different
+ * styles based on whether it is active or not.
+ * @returns The Category component is returning a Link component with a dynamically generated className
+ * based on the props passed to it. The className is determined by the active prop, which determines
+ * the background color, text color, and border color of the Link component. The name prop is displayed
+ * as the text content of the Link component.
+ */
 
 const Category = ({ link = '#', name, active, ...props }) => {
   return (

@@ -13,6 +13,13 @@ const SkillList = [
   'framer motion',
   'sanity',
 ];
+/**
+ * The Skills component in JavaScript returns a section with a list of skills displayed in a styled
+ * format.
+ * @returns The Skills component is returning a section element containing a heading and a list of
+ * skills. The heading states "I'm comfortable in..." and the list contains items from the SkillList
+ * array. Each item is rendered as a list item element with specific styling and hover effects.
+ */
 
 const Skills = () => {
   return (

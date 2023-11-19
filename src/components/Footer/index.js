@@ -5,6 +5,12 @@ import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from '../Icons';
 import Link from 'next/link';
 import siteMetadata from '@/src/utils/siteMetaData';
 
+/**
+ * The `Footer` component is a React functional component that renders a footer section with
+ * interesting stories, a subscription form, social media icons, and copyright information.
+ * @returns The `Footer` component is returning a JSX element representing the footer section of a
+ * webpage.
+ */
 const Footer = () => {
   /* In the given code, `const { register, handleSubmit, formState: { errors } } = useForm();` is using
   the `useForm` hook from the `react-hook-form` library to handle form validation and submission. */

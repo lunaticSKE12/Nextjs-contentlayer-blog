@@ -1,9 +1,19 @@
 'use client';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import React, { useEffect, useState } from 'react';
+/* The line `const supabase = createClientComponentClient();` is creating a Supabase client instance
+using the `createClientComponentClient` function. This client instance can be used to interact with
+the Supabase backend, such as making API requests to fetch data or perform actions like incrementing
+the view count in this case. */
 
 const supabase = createClientComponentClient();
 
+/**
+ * The `ViewCounter` component is a JavaScript function that increments and displays the view count for
+ * a specific slug using Supabase.
+ * @returns The `ViewCounter` component returns a `div` element that displays the number of views if
+ * `showCount` prop is `true`. If `showCount` is `false`, it returns `null`.
+ */
 const ViewCounter = ({ slug, noCount = false, showCount = true }) => {
   const [views, setViews] = useState(0);
 

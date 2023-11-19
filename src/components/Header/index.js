@@ -14,7 +14,19 @@ import { useThemeSwitch } from '../Hooks/useThemeSwitch';
 import { useState } from 'react';
 import { cx } from '@/src/utils';
 
+/**
+ * The `Header` component is a responsive header that includes a logo, a hamburger menu button,
+ * navigation links, and social media icons, with the ability to toggle between light and dark themes.
+ * @returns The `Header` component is returning a JSX element representing the header section of a
+ * website. It includes a logo, a hamburger menu button, navigation links, a theme switcher button, and
+ * social media icons. The appearance and behavior of the header can be controlled by the `mode` and
+ * `click` state variables, as well as the `toggle` and `setMode` functions.
+ */
 const Header = () => {
+  /* The code is using the `useThemeSwitch` custom hook to get the current theme mode and a function to
+  update the theme mode. It also uses the `useState` hook to create a state variable `click` and a
+  function `setClick` to toggle the value of `click`. The `toggle` function is called when the
+  hamburger menu button is clicked, and it updates the value of `click` to its opposite value. */
   const [mode, setMode] = useThemeSwitch();
   const [click, setClick] = useState(false);
 

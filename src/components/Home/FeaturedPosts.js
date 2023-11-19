@@ -3,6 +3,13 @@ import React from 'react';
 import BlogLayoutOne from '../Blog/BlogLayoutOne';
 import BlogLayoutTwo from '../Blog/BlogLayoutTwo';
 
+/**
+ * The FeaturedPosts component displays a section with a title and three blog articles, with different
+ * layouts for each article.
+ * @returns The FeaturedPosts component is returning a section element containing a heading and a grid
+ * of articles. The articles are rendered using the BlogLayoutOne and BlogLayoutTwo components, with
+ * the data from the sortedBlogs array passed as props.
+ */
 const FeaturedPosts = ({ blogs }) => {
   const sortedBlogs = sortBlogs(blogs);
   return (

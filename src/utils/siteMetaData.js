@@ -1,3 +1,5 @@
+/* The `siteMetadata` object is storing various metadata about a website. Here is a breakdown of the
+properties: */
 const siteMetadata = {
   title: 'Next.js Blog With Tailwind CSS and Contentlayer',
   author: 'CodeBucks',

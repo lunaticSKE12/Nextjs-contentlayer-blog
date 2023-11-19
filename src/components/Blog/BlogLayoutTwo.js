@@ -3,6 +3,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+/**
+ * The `BlogLayoutTwo` function returns a JSX component that displays a blog post with an image, tags,
+ * title, and publication date.
+ * @returns The BlogLayoutTwo component is returning a JSX element, which is a div containing a grid
+ * layout with two columns. The first column is a Link component wrapping an Image component, and the
+ * second column is a div containing a span, a Link component wrapping an h2 element, and another span.
+ */
 const BlogLayoutTwo = ({ blog }) => {
   return (
     <div className="group grid grid-cols-12 gap-4 items-center text-dark dark:text-light">

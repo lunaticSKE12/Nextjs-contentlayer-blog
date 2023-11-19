@@ -4,6 +4,10 @@ import Link from 'next/link';
 import React from 'react';
 import Tag from '../Elements/Tag';
 import { slug } from 'github-slugger';
+/**
+ * The `HomeCoverSection` component renders a cover section for a home page with a featured blog post.
+ * @returns The HomeCoverSection component is returning a JSX element.
+ */
 
 const HomeCoverSection = ({ blogs }) => {
   const sortedBlogs = sortBlogs(blogs);
