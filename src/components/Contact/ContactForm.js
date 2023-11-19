@@ -3,6 +3,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 
 export default function ContactForm() {
+  /* In this code snippet, `useForm()` is a custom hook provided by the `react-hook-form` library. */
   const {
     register,
     handleSubmit,

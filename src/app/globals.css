@@ -40,14 +40,14 @@ code[data-line-numbers-max-digits='2'] > [data-line]::before {
 code[data-line-numbers-max-digits='3'] > [data-line]::before {
   width: 3rem;
 }
-
+/* color in mdx */
 [data-highlighted-line]{
   background-color: rgba(255,255,255,0.1) !important;
   padding: 2px;
   padding-left: 0;
   padding-right: 4px;
   border-radius: 2px;
-  border-left: 2px solid #7B00D3;
+  border-left: 2px solid #049996;
 }
 
 [data-highlighted-chars]{
@@ -61,10 +61,11 @@ code[data-line-numbers-max-digits='3'] > [data-line]::before {
   position: relative;
 }
 
+/* color in mdx */
 [data-rehype-pretty-code-title]{
   position: absolute;
   right: 0;
-  background-color: #7B00D3;
+  background-color: #049996;
   color: #fff;
   padding: 4px 8px;
   font-size: 1rem;

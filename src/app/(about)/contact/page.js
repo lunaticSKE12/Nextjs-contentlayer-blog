@@ -6,6 +6,11 @@ export const metadata = {
   description: `Contact me through the form available on this page or email me at `,
 };
 
+/**
+ * The Contact function returns a section element with two div elements inside, one containing a
+ * LottieAnimation component and the other containing a heading and a ContactForm component.
+ * @returns The Contact component is being returned.
+ */
 export default function Contact() {
   return (
     <section

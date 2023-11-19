@@ -8,13 +8,13 @@ import siteMetadata from '@/src/utils/siteMetaData';
 const Footer = () => {
   /* In the given code, `const { register, handleSubmit, formState: { errors } } = useForm();` is using
   the `useForm` hook from the `react-hook-form` library to handle form validation and submission. */
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(errors);
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  // } = useForm();
+  // const onSubmit = (data) => console.log(data);
+  // console.log(errors);
 
   return (
     <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
@@ -26,7 +26,7 @@ const Footer = () => {
         members community to stay up to date with latest news.
       </p>
 
-      <form
+      {/* <form
         onSubmit={handleSubmit(onSubmit)}
         className="mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-light dark:bg-dark p-1 sm:p-2 rounded mx04"
       >
@@ -41,7 +41,7 @@ const Footer = () => {
           type="submit"
           className="bg-dark dark:bg-light text-light dark:text-dark cursor-pointer font-medium rounded px-3 sm:px-5 py-1"
         />
-      </form>
+      </form> */}
       <div className="flex items-center mt-8">
         <a
           href={siteMetadata.linkedin}
@@ -78,7 +78,7 @@ const Footer = () => {
       </div>
       <div className="w-full  mt-16 md:mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex  flex-col md:flex-row items-center justify-between">
         <span className="text-center">
-          &copy;2023 Napong D. All rights reserved.
+          &copy;2023 Napong Dungduangsasitorn. All rights reserved.
         </span>
         <Link
           href="/sitemap.xml"

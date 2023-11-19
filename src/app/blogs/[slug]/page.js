@@ -6,10 +6,20 @@ import RenderMdx from '@/src/components/Blog/RenderMdx';
 import { slug } from 'github-slugger';
 import siteMetadata from '@/src/utils/siteMetaData';
 
+/**
+ * The function generates static parameters for each blog by mapping the flattened path of each blog.
+ * @returns an array of objects. Each object has a property called "slug" which is set to the value of
+ * "blog._raw.flattenedPath".
+ */
 export async function generateStaticParams() {
   return allBlogs.map((blog) => ({ slug: blog._raw.flattenedPath }));
 }
 
+/**
+ * The `generateMetadata` function generates metadata for a blog post, including title, description,
+ * open graph data, and Twitter card data.
+ * @returns The function `generateMetadata` returns an object with the following properties:
+ */
 export async function generateMetadata({ params }) {
   const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug);
   if (!blog) {
@@ -56,9 +66,20 @@ export async function generateMetadata({ params }) {
   };
 }
 
+/**
+ * The `BlogPage` function renders a blog page with a title, description, image, author information,
+ * table of contents, and the blog content itself.
+ * @returns a JSX element that represents a blog page.
+ */
 export default function BlogPage({ params }) {
   const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug);
 
+  /* The code is checking if the `blog` object has an `image` property. If it does, it checks if the
+  `filePath` property of the `image` object is a string. If it is, it creates an array with a single
+  element, which is the URL of the image obtained by concatenating the `siteUrl` from `siteMetadata`
+  and the `filePath` of the image, after removing the `../public` part. If the `filePath` is not a
+  string, it assigns the `blog.image` object directly to `imageList`. If the `blog` object does not
+  have an `image` property, it assigns `siteMetadata.socialBanner` to `imageList`. */
   let imageList = [siteMetadata.socialBanner];
   if (blog.image) {
     imageList =
@@ -67,6 +88,9 @@ export default function BlogPage({ params }) {
         : blog.image;
   }
 
+  /* The `jsonLd` constant is creating a JSON-LD (JavaScript Object Notation for Linked Data) object
+  that represents structured data for a news article. JSON-LD is a way to provide machine-readable
+  data to search engines and other applications. */
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
@@ -84,6 +108,7 @@ export default function BlogPage({ params }) {
     ],
   };
 
+  /* The code is returning a JSX element that represents a blog page. */
   return (
     <>
       <script

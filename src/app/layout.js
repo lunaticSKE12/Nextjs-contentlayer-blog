@@ -17,6 +17,8 @@ const manrope = Manrope({
   variable: '--font-mr',
 });
 
+/* The `metadata` object is exporting a set of metadata values that can be used for SEO (Search Engine
+Optimization) and social media sharing purposes. */
 export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
@@ -52,6 +54,9 @@ export const metadata = {
   },
 };
 
+/* The `export default function RootLayout({ children })` is a React functional component that serves
+as the layout for the entire application. It takes in a `children` prop, which represents the
+content that will be rendered within the layout. */
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

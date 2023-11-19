@@ -7,6 +7,12 @@ export const metadata = {
   description: `Here are some details about my self.`,
 };
 
+/**
+ * The About function returns a JSX element that includes a cover section, a skills section, and a
+ * message with a link to contact the developer for project inquiries.
+ * @returns a JSX fragment that includes the components `<AboutCoverSection />`, `<Skills />`, and an
+ * `<h2>` element. The `<h2>` element contains a text message and a link to the "/contact" page.
+ */
 export default function About() {
   return (
     <>

@@ -30,6 +30,10 @@ export async function generateStaticParams() {
   return paths;
 }
 
+/**
+ * The function generates metadata for a web page based on a given slug parameter.
+ * @returns an object with two properties: "title" and "description".
+ */
 export async function generateMetadata({ params }) {
   return {
     title: `${params.slug.replaceAll('-', ' ')} Blogs`,
@@ -58,6 +62,7 @@ const CategoryPage = ({ params }) => {
     });
   });
 
+  /* The code block is returning JSX elements that will be rendered as HTML on the web page. */
   return (
     <article className="mt-12 flex flex-col text-dark dark:text-light">
       <div className=" px-5 sm:px-10  md:px-24  sxl:px-32 flex flex-col">
