@@ -118,6 +118,9 @@ const Header = () => {
         <Link href={'/'} className="mr-2">
           Home
         </Link>
+        <Link href={'/categories/all'} className="mx-2">
+          Categories
+        </Link>
         <Link href={'/about'} className="mx-2">
           About
         </Link>

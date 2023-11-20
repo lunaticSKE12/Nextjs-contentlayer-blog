@@ -5,6 +5,7 @@ import BlogDetails from '@/src/components/Blog/BlogDetails';
 import RenderMdx from '@/src/components/Blog/RenderMdx';
 import { slug } from 'github-slugger';
 import siteMetadata from '@/src/utils/siteMetaData';
+import BackToTopButton from '@/src/utils/backToTopButton';
 
 /**
  * The function generates static parameters for each blog by mapping the flattened path of each blog.
@@ -180,6 +181,7 @@ export default function BlogPage({ params }) {
           </div>
           <RenderMdx blog={blog} />
         </div>
+        <BackToTopButton />
       </article>
     </>
   );

@@ -80,3 +80,22 @@ code[data-line-numbers-max-digits='3'] > [data-line]::before {
   font-size: 1rem;
   color: #747474;
 }
+
+/* Back to top button */
+.back-to-top {
+  z-index: 10;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  font-size: 40px;
+  background: #049996;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  border: solid 1px black;
+  box-shadow: 0 5px 10px #049996;
+}
+
+.back-to-top:hover {
+  background: #146474;
+}

@@ -1,6 +1,7 @@
 import { allBlogs } from '@/.contentlayer/generated';
 import BlogLayoutThree from '@/src/components/Blog/BlogLayoutThree';
 import Categories from '@/src/components/Blog/Categories';
+import BackToTopButton from '@/src/utils/backToTopButton';
 import GithubSlugger, { slug } from 'github-slugger';
 
 const slugger = new GithubSlugger();
@@ -82,6 +83,7 @@ const CategoryPage = ({ params }) => {
           </article>
         ))}
       </div>
+      <BackToTopButton />
     </article>
   );
 };
