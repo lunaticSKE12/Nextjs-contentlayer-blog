@@ -143,18 +143,26 @@ const Header = () => {
         </button>
       </nav>
       <div className="hidden sm:flex items-center">
-        <a href={siteMetadata.linkedin} className="w-6 h-6 mr-4 inline-block">
+        <a
+          href={siteMetadata.linkedin}
+          target="_blank"
+          className="w-6 h-6 mr-4 inline-block"
+        >
           <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
-        <a href={siteMetadata.twitter} className="w-6 h-6 mr-4 inline-block">
+        {/* <a href={siteMetadata.twitter} className="w-6 h-6 mr-4 inline-block">
           <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
-        </a>
-        <a href={siteMetadata.github} className="w-6 h-6 mr-4 inline-block">
+        </a> */}
+        <a
+          href={siteMetadata.github}
+          target="_blank"
+          className="w-6 h-6 mr-4 inline-block"
+        >
           <GithubIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
         </a>
-        <a href={siteMetadata.dribbble} className="w-6 h-6 mr-4 inline-block">
+        {/* <a href={siteMetadata.dribbble} className="w-6 h-6 mr-4 inline-block">
           <DribbbleIcon className="hover:scale-125 transition-all ease duration-200" />
-        </a>
+        </a> */}
       </div>
     </header>
   );
