@@ -12,7 +12,7 @@ const siteMetadata = {
   socialBanner: '/social-banner.png', // add social banner in the public folder
   email: 'jamesnapongd@gmail.com',
   github: 'https://github.com/lunaticSKE12',
-  twitter: 'https://twitter.com/code_bucks',
+  twitter: 'https://twitter.com/lunaticSKE',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com/codebucks',
   linkedin: 'https://www.linkedin.com/in/napong-dungduangsasitorn/',
